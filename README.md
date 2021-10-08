@@ -35,10 +35,10 @@
 | --------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------- | :----: |
 | chapter 3 자바와 객체지향                     | 10월 13일 수요일 | [이하정](https://github.com/healtheefart)                                          |  링크  |
 | chapter 4 자바가 확장한 객체 지향             | 10월 20일 수요일 | [서동성](https://github.com/sds1vrk)                                               |        |
-| chapter 5 객체 지향 설계 5원칙 SOLID          | 10월 27일 목요일 | [황일용](https://github.com/dlfdyd96)                                              |        |
-| chapter 6 스프링이 사랑한 디자인 패턴         | 11월 3일 목요일  | [박권규](https://github.com/Kwonkyu)                                               |        |
-| chapter 7 스프링 삼각형과 설정 정보           | 11월 10일 목요일 | [오재욱](https://github.com/wooko5), [빅토리 멘토](https://github.com/VictoryPark) |        |
-| Appendix B 자바 8 람다와 인터페이스 스펙 변화 | 11월 17일 목요일 | [박수빈](https://github.com/suebeen)                                               |        |
+| chapter 5 객체 지향 설계 5원칙 SOLID          | 10월 27일 수요일 | [황일용](https://github.com/dlfdyd96)                                              |        |
+| chapter 6 스프링이 사랑한 디자인 패턴         | 11월 3일 수요일  | [박권규](https://github.com/Kwonkyu)                                               |        |
+| chapter 7 스프링 삼각형과 설정 정보           | 11월 10일 수요일 | [오재욱](https://github.com/wooko5), [빅토리 멘토](https://github.com/VictoryPark) |        |
+| Appendix B 자바 8 람다와 인터페이스 스펙 변화 | 11월 17일 수요일 | [박수빈](https://github.com/suebeen)                                               |        |
 
 <br/>
 
