@@ -1,5 +1,6 @@
 package QnA.LSP_ISP;
 
+import QnA.LSP_ISP.concretes.KdtStudent;
 import QnA.LSP_ISP.concretes.KdtTeamLeader;
 import QnA.LSP_ISP.concretes.UniversityStudent;
 import QnA.LSP_ISP.interfaces.JobGettable;

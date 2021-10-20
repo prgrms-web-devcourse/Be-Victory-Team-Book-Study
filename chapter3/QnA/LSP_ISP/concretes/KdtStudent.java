@@ -10,7 +10,7 @@ public class KdtStudent extends Student implements JobGettable {
     public KdtStudent(String name, int age, String schoolName, int stage) {
         super(name, age, schoolName);
         this.stage = stage;
-        this.graduated = true;
+        this.graduated = !schoolName.contains("대학");;
     }
 
     private void sayStage() {
@@ -25,11 +25,11 @@ public class KdtStudent extends Student implements JobGettable {
     @Override
     protected boolean isGraduated() {
         sayStage();
-        return graduated;
+        return this.graduated;
     }
 
     @Override
     public void preparePortfolio() {
-        System.out.println(super.name + " 수강생은 취업을 위해 포트폴리오를 준비한다. ");
+        System.out.println(super.name + " 취준생은 취업을 위해 포트폴리오를 준비한다. ");
     }
 }
