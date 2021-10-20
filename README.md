@@ -34,7 +34,7 @@
 | chapter                                       | date             | 발표자                                                                             | 정리본 |
 | --------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------- | :----: |
 | chapter 3 자바와 객체지향                     | 10월 13일 수요일 | [이하정](https://github.com/healtheefart)                                          |  링크  |
-| chapter 4 자바가 확장한 객체 지향             | 10월 20일 수요일 | [서동성](https://github.com/sds1vrk)                                               |[링크](https://velog.io/@sds1vrk/%EC%9E%90%EB%B0%94%EA%B0%80-%ED%99%95%EC%9E%A5%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5)        |
+| chapter 4 자바가 확장한 객체 지향             | 10월 20일 수요일 | [서동성](https://github.com/sds1vrk)                                               |        |
 | chapter 5 객체 지향 설계 5원칙 SOLID          | 10월 27일 수요일 | [황일용](https://github.com/dlfdyd96)                                              |        |
 | chapter 6 스프링이 사랑한 디자인 패턴         | 11월 3일 수요일  | [박권규](https://github.com/Kwonkyu)                                               |        |
 | chapter 7 스프링 삼각형과 설정 정보           | 11월 10일 수요일 | [오재욱](https://github.com/wooko5), [빅토리 멘토](https://github.com/VictoryPark) |        |
