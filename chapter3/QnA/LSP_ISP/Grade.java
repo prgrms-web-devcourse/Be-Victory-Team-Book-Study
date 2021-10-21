@@ -1,4 +1,4 @@
-package QnA.LSP_ISP;
+package chapter3.QnA.LSP_ISP;
 
 public enum Grade {
     FRESHMEN(1),

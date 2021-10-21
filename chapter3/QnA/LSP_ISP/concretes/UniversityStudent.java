@@ -1,6 +1,6 @@
-package QnA.LSP_ISP.concretes;
+package chapter3.QnA.LSP_ISP.concretes;
 
-import QnA.LSP_ISP.Grade;
+import chapter3.QnA.LSP_ISP.Grade;
 
 public class UniversityStudent extends KdtStudent {
 
