@@ -20,6 +20,7 @@ public class Driver {
     }
 
 
+
     private static void testStudentByLSP(Student kdtLeader, Student univStudent) {
         kdtLeader.study();          // 이하정 kdt 수강생은 북 스터디를 한다.
         univStudent.study();        // 박수빈 대학생은 전공을 공부한다.
