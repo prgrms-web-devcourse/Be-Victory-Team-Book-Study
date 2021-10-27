@@ -1,7 +1,7 @@
-package chapter3.QnA.LSP_ISP.concretes;
+package QnA.LSP_ISP.concretes;
 
-import chapter3.QnA.LSP_ISP.interfaces.Presentator;
-import chapter3.QnA.LSP_ISP.interfaces.TeamLeader;
+import QnA.LSP_ISP.interfaces.Presentator;
+import QnA.LSP_ISP.interfaces.TeamLeader;
 
 public class KdtTeamLeader extends KdtStudent implements TeamLeader, Presentator {
     public KdtTeamLeader(String name, int age, String schoolName, int stage) {

@@ -1,6 +1,6 @@
-package chapter3.QnA.LSP_ISP.concretes;
+package QnA.LSP_ISP.concretes;
 
-import chapter3.QnA.LSP_ISP.Grade;
+import QnA.LSP_ISP.Grade;
 
 public class UniversityStudent extends KdtStudent {
 
@@ -9,7 +9,6 @@ public class UniversityStudent extends KdtStudent {
     public UniversityStudent(String name, int age, String schoolName, int stage, Grade grade) {
         super(name, age, schoolName, stage);
         this.grade = grade;
-        this.graduated = false;
     }
 
     @Override
@@ -24,7 +23,6 @@ public class UniversityStudent extends KdtStudent {
     @Override
     protected boolean isGraduated() {
         sayGrade();
-        super.isGraduated();
-        return this.graduated;
+        return super.isGraduated();
     }
 }

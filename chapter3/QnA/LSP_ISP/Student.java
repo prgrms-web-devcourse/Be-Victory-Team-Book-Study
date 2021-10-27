@@ -1,4 +1,4 @@
-package chapter3.QnA.LSP_ISP;
+package QnA.LSP_ISP;
 
 public class Student {
 

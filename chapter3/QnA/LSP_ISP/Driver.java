@@ -1,10 +1,11 @@
-package chapter3.QnA.LSP_ISP;
+package QnA.LSP_ISP;
 
-import chapter3.QnA.LSP_ISP.concretes.KdtTeamLeader;
-import chapter3.QnA.LSP_ISP.concretes.UniversityStudent;
-import chapter3.QnA.LSP_ISP.interfaces.JobGettable;
-import chapter3.QnA.LSP_ISP.interfaces.Presentator;
-import chapter3.QnA.LSP_ISP.interfaces.TeamLeader;
+import QnA.LSP_ISP.concretes.KdtStudent;
+import QnA.LSP_ISP.concretes.KdtTeamLeader;
+import QnA.LSP_ISP.concretes.UniversityStudent;
+import QnA.LSP_ISP.interfaces.JobGettable;
+import QnA.LSP_ISP.interfaces.Presentator;
+import QnA.LSP_ISP.interfaces.TeamLeader;
 
 public class Driver {
 
