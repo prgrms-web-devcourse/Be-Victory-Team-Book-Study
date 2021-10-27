@@ -1,7 +1,7 @@
-package QnA.LSP_ISP.concretes;
+package chapter3.QnA.LSP_ISP.concretes;
 
-import QnA.LSP_ISP.Student;
-import QnA.LSP_ISP.interfaces.JobGettable;
+import chapter3.QnA.LSP_ISP.Student;
+import chapter3.QnA.LSP_ISP.interfaces.JobGettable;
 
 public class KdtStudent extends Student implements JobGettable {
 
