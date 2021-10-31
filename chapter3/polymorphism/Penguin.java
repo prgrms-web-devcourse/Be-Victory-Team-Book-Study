@@ -1,4 +1,4 @@
-package polymorphism;
+package chapter3.polymorphism;
 
 public class Penguin extends Animal{
     public String habitat;

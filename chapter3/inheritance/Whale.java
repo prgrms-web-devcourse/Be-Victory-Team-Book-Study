@@ -1,4 +1,4 @@
-package inheritance;
+package chapter3.inheritance;
 
 public class Whale extends Mammal {
     Whale() {
