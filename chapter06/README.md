@@ -2,7 +2,7 @@
 
 날짜: 2021년 10월 30일
 
-프로그램을 작성하다 보면 비슷 비슷한 상황에 직면하게 되는 경우가 많은데, 이러한 상황에서 고민하고 정제된 사실상의 표준 설계패턴이 디자인 패턴이다. 
+프로그램을 작성하다 보면 비슷 비슷한 상황에 직면하게 되는 경우가 많은데, 이러한 상황에서 고민하고 정제된 사실상의 표준 설계패턴이 디자인 패턴이다.
 
 디자인 패턴은 실제 개발 현장에서 비즈니스 요구 사항을 프로그래밍으로 처리하면서 만들어진 다양한 해결책 중에서 많은 사람들이 인정한 베스트 프랙티스를 정리한 것이다.
 
@@ -35,7 +35,7 @@ class ClientWithNoAdapter {
     public static void main(String[] args) {
         ServiceA serviceA = new ServiceA();
         ServiceB serviceB = new ServiceB();
-        
+
         serviceA.runServiceA();
         serviceB.runServiceB();
     }
@@ -94,7 +94,6 @@ class ClientWithNoAdapter {
 - 동일한 메서드명으로 두 객체의 메서드를 호출하여 유지보수성을 높일 수 있다.
 
 > "어댑터 패턴은 호출당하는 쪽의 메서드를 호출하는 쪽의 코드에 대응하도록 중간에 변환기를 통해 호출하는 패턴"
-> 
 
 ## 예시
 
@@ -138,8 +137,8 @@ class ClientWithProxy {
 ```
 
 - proxy 매번 부를때마다 service는 다른 객체일까?
-    - 첫 번째 proxy.service : `Service@785`
-    - 두 번째 proxy2.service : `Service@786`
+  - 첫 번째 proxy.service : `Service@785`
+  - 두 번째 proxy2.service : `Service@786`
 
 ## 특징
 
@@ -223,7 +222,6 @@ class Singleton {
 상위 클래스에 공통 로직을 수행하는 템플릿 메서드와 하위 클래스에 오버라이딩을 강제하는 추상 메서드 또는 선택적으로 오버라이딩할 수 있는 훅(Hook) 메서드를 두즌 패턴.
 
 > "상위 클래스의 견본 메서드에서 하위 클래스가 오버라이딩한 메서드를 호출하는 패턴"
-> 
 
 ```java
 abstract class Animal {
@@ -266,9 +264,9 @@ class Dog extends Animal {
 
 - 즉, 객체의 생성 코드를 별도의 클래스/메서드로 분리함으로써 객체 생성의 변화에 대비하는 데 유용하다.
 - 특정 기능의 구현은 개별 클래스를 통해 제공되는 것이 바람직한 설계다.
-    - 기능의 변경이나 상황에 따른 기능의 선택은 해당 객체를 생성하는 코드의 변경을 초래한다.
-    - 상황에 따라 적절한 객체를 생성하는 코드는 자주 중복될 수 있다.
-    - 객체 생성 방식의 변화는 해당되는 모든 코드 부분을 변경해야 하는 문제가 발생한다.
+  - 기능의 변경이나 상황에 따른 기능의 선택은 해당 객체를 생성하는 코드의 변경을 초래한다.
+  - 상황에 따라 적절한 객체를 생성하는 코드는 자주 중복될 수 있다.
+  - 객체 생성 방식의 변화는 해당되는 모든 코드 부분을 변경해야 하는 문제가 발생한다.
 - 스트래티지 패턴, 싱글턴 패턴, 템플릿 메서드 패턴을 사용한다.
 
 # 전략 패턴
@@ -279,7 +277,7 @@ class Dog extends Animal {
 2. 전략 객체를 사용하는 **컨텍스트**(전략 객체의 사용자/소비자)
 3. 전략 객체를 생성해 컨텍스트에 주입하는 **클라이언트**(제3자, 전략 객체의 공급자)
 
-![Untitled](06%20%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%E1%84%8B%E1%85%B5%20%E1%84%89%E1%85%A1%E1%84%85%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%2091c95478a1e34a4cb426731694c75766/Untitled.png)
+![Untitled](images/Untitled.png)
 
 ```java
 interface Strategy {
@@ -299,7 +297,7 @@ class Solider {
 	void runContext(Strategy strategy) {
 		System.out.println("start");
 		staregy.runStrategy();
-		System.out.println("end");	
+		System.out.println("end");
 	}
 }
 
@@ -308,7 +306,7 @@ class Client {
 	public static void main(String[] args) {
 		Solider rambo = new Solider();
 
-		Strategy strategy = new StrategyGun();		
+		Strategy strategy = new StrategyGun();
 		rambo.runContext(strategy);
 	}
 }
@@ -319,11 +317,10 @@ class Client {
 같은 문제 해결책으로 상속을 이용하는 **템플릿 메서드 패턴**과 객체 주입을 통한 **전략 패턴** 중에서 선택 / 적용 할 수 있다.
 
 > "클라이언트가 전략을 생성해 전략을 실행할 컨텍스트에 주입하는 패턴"
-> 
 
 # 탬플릿 콜백 패턴
 
-Spring의 DI에서 사용하는 특별한 형태의 전략 패턴이다. 
+Spring의 DI에서 사용하는 특별한 형태의 전략 패턴이다.
 
 전략 패턴과 모든 것이 동일하지만, 전략을 익명 내부 클래스로 정의해서 사용한다는 것이 특징.
 
@@ -334,7 +331,7 @@ class Solider {
 	void runContext(String weaponSound) {
 		System.out.println("start");
 		executeWeapon(weaponSound).renStrategy();
-		System.out.println("end");	
+		System.out.println("end");
 	}
 
 	private Strategy executeWeapon(final String weaponSound) {
@@ -349,4 +346,21 @@ class Solider {
 ```
 
 > 전략을 익명 내부 클래스로 구현한 전략 패턴
->
+
+# 질문 사항
+
+### Q. dtoToEntity와 같은 Mapping / converter는 AdapterPattern 을 적용한것이 맞는가?
+
+A. 어뎁터패턴은 기능과 기능 연결에서 서로 연결에 맞지 않아 그 기능을 사용할 수 없을때 사용하는 것이다. 그래서 converter는 단순 Mapper 클래스.
+[참고 링크](https://stackoverflow.com/questions/11588557/is-an-adapter-and-converter-the-same-thing)
+
+
+### Q. 모든
+
+A. 모든 제어권을 Spring Framework를 가지고 있는데 Application Context가 IoC을 주관하는 주체. Application Context모든 빈을 가지고 있어야함. 그런데 Bean이 싱글톤이여야지 멀티 스레드 환경에서 안전하고, 여러 Repository를 사용할때 다른 Bean이라면 관리도 안되고, RuntimeException이 난다. ApplicationContext가 관리해야하기때문에 SingleTon으로 관리한다.
+
+
+### Q. 싱글톤 패턴은 Thread-safe하지 않는데.,,?
+
+A. 스프링은 reflection으로 객체를 생성하고, 예제는 직접 new로 생성하는 것. spring은 new로 생성하는 것이 아닌 reflection으로 생성. Reflection Proxy AOP. 
+[참고 링크](https://medium.com/@joongwon/multi-thread-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%AC%EB%B0%94%EB%A5%B8-singleton-578d9511fd42)
