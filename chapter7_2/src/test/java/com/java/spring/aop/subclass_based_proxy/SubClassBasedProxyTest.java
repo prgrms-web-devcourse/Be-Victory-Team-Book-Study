@@ -10,8 +10,8 @@ import static org.hamcrest.Matchers.is;
 public class SubClassBasedProxyTest {
 
     @Test
-    @DisplayName("cglib proxy 객체는 로그를 찍는다.")
-    void testDynamicProxy() {
+    @DisplayName("CGLib proxy 객체는 doSomething 메소드에만 로그를 찍는다.")
+    void testCGLibProxy() {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(RealLogic.class);
         enhancer.setCallback(new DoSomethingMethodInterceptor(new SomethingMethodMatcher()));

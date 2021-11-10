@@ -28,9 +28,9 @@ public class InterfacedBasedProxyTest {
     @DisplayName("DynamicProxy 객체는 로직앞에 로그를 찍는다.")
     void testDynamicProxy() {
         MyLogic proxiedLogic = (MyLogic) Proxy.newProxyInstance(
-                MyDynamicProxyHandler.class.getClassLoader(),
+                MyProxyHandler.class.getClassLoader(),
                 new Class[]{MyLogic.class},
-                new MyDynamicProxyHandler(new TargetLogic())
+                new MyProxyHandler(new TargetLogic())
         );
 
         assertThat(proxiedLogic.doSomething(), is(DO_SOMETHING));
