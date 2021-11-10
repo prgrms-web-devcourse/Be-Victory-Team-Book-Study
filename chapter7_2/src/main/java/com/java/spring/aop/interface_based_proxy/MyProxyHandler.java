@@ -6,11 +6,11 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 @Slf4j
-public class MyDynamicProxyHandler implements InvocationHandler {
+public class MyProxyHandler implements InvocationHandler {
 
     MyLogic targetLogic;
 
-    MyDynamicProxyHandler(MyLogic targetLogic) {
+    MyProxyHandler(MyLogic targetLogic) {
         this.targetLogic = targetLogic;
     }
 

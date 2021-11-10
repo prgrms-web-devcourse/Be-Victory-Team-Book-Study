@@ -23,11 +23,13 @@ public class LoggingAspect {
     }
 
 //    @After("execution(public * com.java.spring.aop..*Logic.do*())")
+    @After("@annotation(Logging)")
     public void logAfter(JoinPoint joinPoint) {
         log.info("after {} :: {}", joinPoint.getTarget().getClass().getCanonicalName(), joinPoint.getSignature().getName());
     }
 
-    @Around("execution(public * com.java.spring.aop..*.*())")
+//    @Around("execution(public * com.java.spring.aop..*.*())")
+    @Around("com.java.spring.aop.aspectj.CommonPointCut.loggingBeforeMethod()")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         log.info("around Before {} :: {}", joinPoint.getTarget().getClass().getCanonicalName(), joinPoint.getSignature().getName());
         var result = joinPoint.proceed();
