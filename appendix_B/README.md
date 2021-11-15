@@ -10,9 +10,9 @@
 
 - 빅데이터의 분석 및 활용을 위해 프로그래머들에게 병렬화 기술이 필요했다.
 - 점차 규모가 커져만 가는 데이터를 처리하기 위한 방법이 필요했고, 자바 8에서는 병렬화를 위해 컬렉션을 강화했고, 이러한 컬렉션을 더 효율적으로 사용하기 위해 스트림을 강화했다.
-    - 스트림을 효율적으로 사용하기 위해 함수형 프로그래밍이,
-    - 함수형 프로그래밍을 사용하기 위해 람다가
-    - 람다를 사용하기 위해 인터페이스의 변화가 수반됐다.
+  - 스트림을 효율적으로 사용하기 위해 함수형 프로그래밍이,
+  - 함수형 프로그래밍을 사용하기 위해 람다가
+  - 람다를 사용하기 위해 인터페이스의 변화가 수반됐다.
 - 람다를 지원하기 위한 인터페이스를 함수형 인터페이스라고 한다.
 
 ## B2. 람다란 무엇인가?
@@ -20,56 +20,51 @@
 람다 함수는 함수형 프로그래밍 언어에서 사용되는 개념으로 **익명 함수**라고도 한다. Java 8 부터 지원되며, 불필요한 코드를 줄이고 가독성을 향상시키는 것을 목적으로 두고있다.
 
 - 특징
-    - 기존에는 코드 블록을 위해 메서드를, 다시 메서드를 사용하기 위해 익명 객체를 만들거나 하는식이었다.
-    
-    ```java
-    public class Main {
-    	public static void main(String[] args) {
-    		Mytest mt = new MyTest();
-    
-    		Runnable r = mt;
-    
-    		r.run();
-    	}
-    }
-    
-    class MyTest implements Runnable {
-    	@Override
-    	public void run() {
-    		System.out.println("Hello Lambda!!");
-    	}
-    }
-    ```
-    
-    - 코드 블록인 람다를 메서드의 인자나 반환값으로 사용할 수 있게 됐다.
-    
-    ```java
-    // CASE1 : 익명 객체 생성하는 방법
-    public class Main {
-    	public static void main(String[] args) {
-    		Runnable r = new Runnable() {
-    			@Override
-    			public void run() {
-    				System.out.println("Hello Lambda!!");
-    			}
-    		}
-    		r.run();
-    	}
-    }
-    ```
-    
-    ```java
-    // CASE2 : Lambda
-    public class Main {
-    	public static void main(String[] args) {
-    		Runnable r = () -> System.out.println("Hello Lambda!!");
-    		r.run();
-    	}
-    }
-    ```
-    
-    - Runnable 타입으로 참조 변수 r을 만들고 있으니 `new Runnable()` 은 컴파일러가 알아낼 수 있다. 따라서 굳이 코드로 작성할 필요가 없어졌으며 `new Runnable()`이 사라질 수 있었다.
-    - Runnable 인터페이스가 가진 추상 메서드가 run() 메서드가 단 하나이기 때문에 단순하게 `public void run()`이 `()` 로 변했다.
+  - 기존에는 코드 블록을 위해 메서드를, 다시 메서드를 사용하기 위해 익명 객체를 만들거나 하는식이었다.
+  ```java
+  public class Main {
+  	public static void main(String[] args) {
+  		Mytest mt = new MyTest();
+
+  		Runnable r = mt;
+
+  		r.run();
+  	}
+  }
+
+  class MyTest implements Runnable {
+  	@Override
+  	public void run() {
+  		System.out.println("Hello Lambda!!");
+  	}
+  }
+  ```
+  - 코드 블록인 람다를 메서드의 인자나 반환값으로 사용할 수 있게 됐다.
+  ```java
+  // CASE1 : 익명 객체 생성하는 방법
+  public class Main {
+  	public static void main(String[] args) {
+  		Runnable r = new Runnable() {
+  			@Override
+  			public void run() {
+  				System.out.println("Hello Lambda!!");
+  			}
+  		}
+  		r.run();
+  	}
+  }
+  ```
+  ```java
+  // CASE2 : Lambda
+  public class Main {
+  	public static void main(String[] args) {
+  		Runnable r = () -> System.out.println("Hello Lambda!!");
+  		r.run();
+  	}
+  }
+  ```
+  - Runnable 타입으로 참조 변수 r을 만들고 있으니 `new Runnable()` 은 컴파일러가 알아낼 수 있다. 따라서 굳이 코드로 작성할 필요가 없어졌으며 `new Runnable()`이 사라질 수 있었다.
+  - Runnable 인터페이스가 가진 추상 메서드가 run() 메서드가 단 하나이기 때문에 단순하게 `public void run()`이 `()` 로 변했다.
 
 ## B3. 함수형 인터페이스
 
@@ -146,7 +141,7 @@ Arrays.stream(ages) // 기존 배열을 이용해 스트림 을 얻는다.
 
 이를 통해 How가 아닌 What만을 지정하여 **함수형 프로그래밍의 장점인 선언적 프로그래밍을 활용할 수 있다.**
 
-(*"어떻게 하라"* 보다는 *"무엇을 원한다"* 라고 선언하는 것과 같다)
+(_"어떻게 하라"_ 보다는 _"무엇을 원한다"_ 라고 선언하는 것과 같다)
 
 또한 스트림은 메서드 체인 패턴을 이용해 최종 연산이 아닌 모든 중간 연산은 다시 스트림을 반환해 코드를 간략하게 작성할 수 있다.
 
@@ -200,16 +195,16 @@ MyClass m2 = factory.get();
 public interface MyFunctionalInterface {
 	// 정적 상수
 	public static final int CONSTANT = 1;
-	
+
 	// 추상 인스턴스 메서드
 	public abstract int runSomething(int count);
 
-	
+
 	// (추가) 구체 인스턴스 메서드 - 디폴트 메서드
 	public default void concreteInstanceMethod() {
 		System.out.println("this is default method");
 	}
-	
+
 	// (추가) (구체) 정적 메서드
 	public static void concreateStaticMethod() {
 		System.out.println("정적 메서드 - 구체 정적 메서드");
