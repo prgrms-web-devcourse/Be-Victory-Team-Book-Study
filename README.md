@@ -13,11 +13,11 @@
   | 2장 자바와 절차적/구조적 프로그래밍 (수정중)                 | [링크](https://github.com/wooko5/OOP-In-Spring/blob/main/2021.10.06%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%202%EC%9E%A5.md) |
   | 3장 자바와 객체 지향                                         | [링크](https://github.com/wooko5/OOP-In-Spring/blob/main/2021.10.13%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%203%EC%9E%A5.md) |
   | 4장 자바가 확장한 객체 지향                                  | [링크](https://github.com/wooko5/OOP-In-Spring/blob/main/2021.10.20%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%204%EC%9E%A5.md) |
-  | 5장 객체 지향 설계 5원칙(SOLID)                              |                                                              |
-  | 6장 스프링이 사랑한 디자인 패턴                              |                                                              |
-  | 7장 스프링 삼각형과 설정 정보 1 - IoC/DI 제어의 역전, 의존성 주입 |                                                              |
-  | 7장 스프링 삼각형과 설정 정보 2 - AOP                        |                                                              |
-  | Appendix B 자바 8 람다와 인터페이스 스펙 변화                |                                                              |
+  | 5장 객체 지향 설계 5원칙(SOLID)                              | [링크](https://github.com/wooko5/Be-Victory-Team-Book-Study/blob/wooko5/2021.10.27%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%205%EC%9E%A5.md                                                             |
+  | 6장 스프링이 사랑한 디자인 패턴                              | [링크](https://github.com/wooko5/Be-Victory-Team-Book-Study/blob/wooko5/2021.11.03%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%206%EC%9E%A5.md)                                                             |
+  | 7장 스프링 삼각형과 설정 정보 1 - IoC/DI 제어의 역전, 의존성 주입 | [링크](https://github.com/wooko5/Be-Victory-Team-Book-Study/blob/wooko5/2021.11.10%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%207%EC%9E%A5.md)                                                              |
+  | 7장 스프링 삼각형과 설정 정보 2 - AOP                        | [링크](https://github.com/wooko5/Be-Victory-Team-Book-Study/blob/wooko5/2021.11.10%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%207%EC%9E%A5.md)                                                              |
+  | Appendix B 자바 8 람다와 인터페이스 스펙 변화                |[링크](https://github.com/wooko5/Be-Victory-Team-Book-Study/blob/wooko5/2021.11.17%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8A%A4%ED%84%B0%EB%94%94%20%EB%B6%80%EB%A1%9DB.md)                                                              |
 
 
 ## 🏷 기간
